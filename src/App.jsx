@@ -1,8 +1,13 @@
 import Bio from "./components/Bio";
+import EducationSection from "./components/EducationSection";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import WorkExperience from "./components/WorkExperience";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
+
 
 function App() {
  return(
@@ -14,6 +19,10 @@ function App() {
     <Projects/>
     <Bio/>
     < Skills/>
+    <WorkExperience/>
+    <EducationSection/>
+    <ContactSection/>
+    <Footer/>
   </div>
  
  </div>
