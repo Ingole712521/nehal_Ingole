@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import './Skills.css';
 
 // Import SVG files
@@ -10,7 +12,7 @@ import ReactIcon from '../assets/logo/react.svg';
 import TerraformIcon from '../assets/logo/terraform.svg';
 import JavaIcon from '../assets/logo/java.svg';
 import MongoDBIcon from '../assets/logo/mongodb.svg';
-import KafkaIcon from '../assets/logo/kafka.svg';
+import KafkaIcon from '../assets/logo/kafka-svgrepo-com.svg';
 import PrometheusIcon from '../assets/logo/prometheus.svg';
 import GrafanaIcon from '../assets/logo/grafana.svg';
 import NextjsIcon from '../assets/logo/next.svg';
@@ -34,15 +36,29 @@ const SKILLS = [
 ];
 
 const Skills = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1
+    });
+
     return (
         <div className="skills-section" id="skills">
-            <h2>My Skills</h2>
-            <div className="skills-container">
+            <h2 className="text-4xl font-bold mb-8">My Skills</h2>
+            <div
+                ref={ref}
+                className="skills-container"
+            >
                 {SKILLS.map((skill, index) => (
-                    <div key={index} className="skill">
+                    <motion.div
+                        key={index}
+                        className="skill"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
                         <img src={skill.icon} alt={skill.name} className="skill-icon" />
-                        <p>{skill.name}</p>
-                    </div>
+                        <p className="mt-2 text-lg">{skill.name}</p>
+                    </motion.div>
                 ))}
             </div>
         </div>

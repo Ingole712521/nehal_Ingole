@@ -1,9 +1,9 @@
-import projectImage1 from "../assets/project1.jpeg";
-import projectImage2 from "../assets/project2.jpeg";
-import projectImage3 from "../assets/project3.jpeg";
-import projectImage4 from "../assets/project4.jpeg";
-import projectImage5 from "../assets/project5.jpeg";
-import projectImage6 from "../assets/project6.jpeg";
+import projectImage1 from "../assets/project1.png";
+import projectImage2 from "../assets/project2.png";
+import projectImage3 from "../assets/project3.png";
+import projectImage4 from "../assets/project4.png";
+import projectImage5 from "../assets/project5.png";
+import projectImage6 from "../assets/project6.png";
 
 export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
@@ -110,7 +110,7 @@ export const EDUCATION = [
     institution: "Government College of Engineering Karad",
     duration: "August 2019 - June 2023",
     description:
-      " ive techniques. Participated in various projects involving frontend development, algorithms, and data structures. Graduated with honors.",
+      "During my time at the Government College of Engineering, Karad, I gained a solid foundation in coding and management. I completed over 20 projects and authored more than 72 Hashnode blog posts covering topics such as DevOps tools, design, React, and Terraform. This experience has honed my technical skills and deepened my understanding of modern development practices.",
   },
 ];
 

@@ -1,7 +1,9 @@
-import emailjs from "@emailjs/browser";
 import { useState } from "react";
-import { FiSend } from "react-icons/fi"; // Import the send icon if it's being used
-import { Toaster, toast } from "react-hot-toast"; // Import toast for notifications
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { FiSend } from "react-icons/fi";
+import { Toaster, toast } from "react-hot-toast";
+import emailjs from "@emailjs/browser";
 
 const ContactSection = () => {
     const [formData, setFormData] = useState({
@@ -12,6 +14,11 @@ const ContactSection = () => {
 
     const [errors, setErrors] = useState({});
     const [isSending, setIsSending] = useState(false);
+
+    const { ref, inView } = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -64,7 +71,14 @@ const ContactSection = () => {
     };
 
     return (
-        <div className="p-4 lg:w-3/4" id="contact">
+        <motion.div
+            className="p-4 lg:w-3/4"
+            id="contact"
+            ref={ref}
+            initial={{ opacity: 0, y: 20 }}
+            animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+            transition={{ duration: 0.5 }}
+        >
             <Toaster />
             <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">Let's Connect</h2>
             <form onSubmit={handleSubmit}>
@@ -125,7 +139,7 @@ const ContactSection = () => {
                     </div>
                 </button>
             </form>
-        </div>
+        </motion.div>
     );
 };
 
