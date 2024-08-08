@@ -12,7 +12,7 @@ import ReactIcon from '../assets/logo/react.svg';
 import TerraformIcon from '../assets/logo/terraform.svg';
 import JavaIcon from '../assets/logo/java.svg';
 import MongoDBIcon from '../assets/logo/mongodb.svg';
-import KafkaIcon from '../assets/logo/kafka-svgrepo-com.svg';
+import KafkaIcon from '../assets/logo/kafka.svg';
 import PrometheusIcon from '../assets/logo/prometheus.svg';
 import GrafanaIcon from '../assets/logo/grafana.svg';
 import NextjsIcon from '../assets/logo/next.svg';
