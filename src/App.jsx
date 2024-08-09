@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import WorkExperience from "./components/WorkExperience";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+// import Work from "./components/Work";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
     <Hero/>
     <Navbar/>
     <Projects/>
+    {/* <Work/> */}
     <Bio/>
     < Skills/>
     <WorkExperience/>
