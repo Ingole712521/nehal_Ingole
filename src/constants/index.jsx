@@ -82,11 +82,11 @@ export const BIO = [
 
 export const EXPERIENCES = [
   {
-    title: "Devops Engineer Trainee",
-    company: " LinuxWorld Informatics Pvt.Ltd  ",
-    duration: "September 2020 - August 2021",
+    title: "Full Stack Developer",
+    company: "Alief View Media Group  ",
+    duration: "March 2024 - Present",
     description:
-      " I have extensive experience working with Kubernetes, Jenkins, Docker, and over six additional tools. Through my efforts, I have successfully increased productive security by 2% and minimized project costs by 10%.",
+      " I spearheaded the development of a website from the ground up, overseeing all aspects from initial concept and design through to final deployment. This involved creating a robust and responsive layout, integrating dynamic functionalities, and ensuring a seamless user experience across all devices. My work encompassed front-end and back-end development, optimizing performance, and implementing security measures to deliver a high-quality, fully functional website  ",
   },
   {
     title: " SummerProgram on MLOps",
@@ -96,11 +96,14 @@ export const EXPERIENCES = [
       " I have successfully completed over 10 real-world projects focused on MLOps practices, showcasing my practical skills in deploying, monitoring, and scaling machine learning models. Additionally, I created a powerful application for managing Docker and Kubernetes environments, optimizing container orchestration and deployment pipelines to enhance efficiency and reliability.",
   },
   {
-    title: "Frontend Engineer",
-    company: "Alief View Media Group  ",
-    duration: "June 2024 - Present",
+    title: "Devops Engineer Trainee",
+    company: " LinuxWorld Informatics Pvt.Ltd  ",
+    duration: "September 2020 - August 2021",
     description:
-      " I spearheaded the development of a website from the ground up, overseeing all aspects from initial concept and design through to final deployment. This involved creating a robust and responsive layout, integrating dynamic functionalities, and ensuring a seamless user experience across all devices. My work encompassed front-end and back-end development, optimizing performance, and implementing security measures to deliver a high-quality, fully functional website  ",  },
+      " I have extensive experience working with Kubernetes, Jenkins, Docker, and over six additional tools. Through my efforts, I have successfully increased productive security by 2% and minimized project costs by 10%.",
+  },
+  
+  
   
 ];
 
