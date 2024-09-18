@@ -12,7 +12,7 @@ const Projects = () => {
 
     return (
         <section className="pt-20" id="projects">
-            <h2 className="mb-8 text-center text-3xl lg:text-4xl">Projects</h2>
+            <h2 className=" text-center text-4xl font-bold mb-8">Projects</h2>
             <div
                 ref={ref}
                 className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"

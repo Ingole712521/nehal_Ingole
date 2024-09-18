@@ -14,12 +14,12 @@ const Bio = () => {
             id="bio"
             ref={ref}
         >
-            <h2 className="text-center text-3xl lg:text-4xl">Bio</h2>
+            <h2 className="text-center text-4xl font-bold mb-8  ">Bio</h2>
             <div>
                 {BIO.map((bio, index) => (
                     <motion.p
                         key={index}
-                        className="mb-4 text-lg lg:text-xl xl:text-2xl justify-evenly"
+                        className="mmb-8 p-2 text-xl justify-evenly"
                         initial={{ opacity: 0, y: 20 }}
                         animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}

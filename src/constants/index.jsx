@@ -73,9 +73,9 @@ export const PROJECTS = [
 ];
 
 export const BIO = [
-  "Nehal Ingole graduated from Government College of Engineering, Karad in 2023, establishing a strong foundation in full-stack engineering and DevOps.",
-  "With a proven track record in executing projects on AWS and expertise in Docker orchestration and cybersecurity, Nehal Ingole excels in automating and securing cloud-based environments.",
-  "Passionate about DevOps methodologies and frontend development, Nehal has authored over 72 insightful blog posts and continuously embraces new technologies to drive innovation and efficiency in tech solutions.",
+  "I graduated from Government College of Engineering, Karad, in 2023, establishing a strong foundation in full-stack engineering and DevOps. " +
+  "With a proven track record of executing projects on AWS and expertise in Docker orchestration and cybersecurity, I excel in automating and securing cloud-based environments. " +
+  "Passionate about DevOps methodologies and frontend development, I have authored over 72 insightful blog posts and continuously embrace new technologies to drive innovation and efficiency in tech solutions."
 ];
 
 
